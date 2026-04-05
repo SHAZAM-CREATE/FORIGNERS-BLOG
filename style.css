@@ -64,18 +64,27 @@ body {
 
 .earning-item {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    padding: 2px 0; /* Adds a tiny bit of breathing room */
 }
 
-.border-left {
-    border-left: 1px solid #222;
+.earning-label {
+    display: block;
+    font-size: 8px; /* Slightly smaller to keep it professional */
+    color: #888;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
 }
 
-/* Neon Colors */
-.neon-green { color: #39FF14; font-weight: 800; }
-.neon-blue { color: #00FFFF; font-weight: 800; }
-.neon-red { color: #FF4444; font-weight: 800; }
+.earning-amount {
+    font-size: 12px; /* Adjusted to fit "Ksh 20,250" comfortably */
+    font-weight: 800;
+    white-space: nowrap; /* Prevents the number from breaking into two lines */
+}
+
+/* Neon Glow for the new amounts */
+.neon-green { color: #39FF14; text-shadow: 0 0 5px rgba(57, 255, 20, 0.2); }
+.neon-blue { color: #00FFFF; text-shadow: 0 0 5px rgba(0, 255, 255, 0.2); }
+.neon-red { color: #FF4444; text-shadow: 0 0 5px rgba(255, 68, 68, 0.2); }
 header {
     position: -webkit-sticky; /* For Safari support */
     position: sticky;
