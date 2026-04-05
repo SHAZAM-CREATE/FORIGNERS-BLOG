@@ -269,6 +269,33 @@ header {
     color: black;
     border-color: var(--neon-cyan);
 }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Official WhatsApp Green */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 2000; /* Higher than the sticky header */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Slight grow effect when touched */
+}
 .footer {
     text-align: center;
     margin-top: 50px;
